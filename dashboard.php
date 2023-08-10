@@ -44,20 +44,7 @@ if ($result->num_rows == 1) {
     header("Location: login.php");
     exit();
 }
-// <?php echo $lastupdated_at;
-//                          <?php echo $updated_at; ?
-//                         <p>Account created at: <?php echo $created_at; 
-//                         <p>Current login: <?php echo $last_login; 
-//                         <p>Previous Login: <?php echo $previous_logout; 
 
-// $row = $result->fetch_assoc();
-
-// $created_at = $row["created_at"];
-// $last_login = $row["last_login"];
-// $previous_logout = $row["previous_logout"];
-
-// $conn->close();
-// ?>
 
 <!DOCTYPE html>
 <html>
