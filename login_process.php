@@ -7,11 +7,6 @@ session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 
-// $servername = "localhost";
-// $username = "your_username";
-// $password = "your_password";
-// $dbname = "your_database";
-
 $conn = new mysqli("localhost", "root", "", "userdata");
 
 
@@ -31,8 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($password, $row["password"])) {
             $_SESSION["username"] = $username;
 
-            // Update last_login timestamp
-            //$user_id = $row["id"];
 
              // Update previous_logout timestamp if exists
              $username = $row["username"];
