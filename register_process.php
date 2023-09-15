@@ -4,10 +4,7 @@ include('bootstrap.php');
 
 session_start();
 
-// $servername = "localhost";
-// $username = "your_username";
-// $password = "your_password";
-// $dbname = "your_database";
+
 
 $conn = new mysqli("localhost", "root", "", "userdata");
 
